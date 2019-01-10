@@ -30,12 +30,13 @@ class FlickrPhotoCell : UICollectionViewCell {
                     return
                 }
                 DispatchQueue.global().async {
-                    let data = try? Data(contentsOf: photo.photoUrl as URL)
-                    DispatchQueue.main.async {
-                        if let image = UIImage(data: data!){
-                            ImageCache.shared.save(image: image, forKey: photo.photoUrl.absoluteString)
-                            if self.photoUrl == photo.photoUrl.absoluteString{
-                                self.imageView.image = image
+                    if let data = try? Data(contentsOf: photo.photoUrl as URL){
+                        DispatchQueue.main.async {
+                            if let image = UIImage(data: data){
+                                ImageCache.shared.save(image: image, forKey: photo.photoUrl.absoluteString)
+                                if self.photoUrl == photo.photoUrl.absoluteString{
+                                    self.imageView.image = image
+                                }
                             }
                         }
                     }

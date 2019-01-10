@@ -40,11 +40,11 @@ The application has following structure and source files -
      
      
 **Future Scope-**
-1) Improving UX & design.
+1) Improving UI/UX.
 2) Handling more error codes and edge cases.
-3) Improvements in caching policy
+3) Improvements in caching policy.
 4) UI and Unit test coverage.
-5) Refactionring w.r.to latest API's.
+5) Refactoring source w.r.to latest API's.
 
 
      

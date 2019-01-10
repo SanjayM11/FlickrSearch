@@ -16,11 +16,11 @@ The application has following structure and source files -
     
 - Layouts (Group) includes - 
 
-    *ThreeColumnFlowLayout.swift* file. This files mainy contains source to calculate the size, frame and layout of all the collection view items in three colums format.
+    *ThreeColumnFlowLayout.swift* file. This files mainy contains source to calculate the size, frame and layout of all the collection view items in three columns format.
     
 - Cells (Group) includes - 
 
-    *FlickrPhotoCell.swift* file. This file is inherited from UICollectioonViewCell, which mainly adds a UIImageView to display the Flickr images from cache(if it is available from cache) otherwise after downloading from asynchronous request.
+    *FlickrPhotoCell.swift* file. This file is inherited from UICollectionViewCell, which mainly adds a UIImageView to display the Flickr images from cache(if it is available from cache) otherwise after downloading from asynchronous request.
     
 - APIManager (Group) includes -
 
@@ -36,7 +36,7 @@ The application has following structure and source files -
      
 - Storyboards -
 
-     *Main.storyboard* file. Includes SearchViewController, having Search Bar and UICollection View added on the same.
+     *Main.storyboard* file. Includes SearchViewController, having Search Bar and UICollection View on the same.
      
      
 **Future Scope-**
